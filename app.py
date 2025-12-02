@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-app=Flask(__name__)
+app=Flask(__name__)  #application name
 model=pickle.load(open('sentiment_model.pkl','rb'))
 vectorizer=pickle.load(open('tfidf_vectorizer.pkl','rb'))
 
